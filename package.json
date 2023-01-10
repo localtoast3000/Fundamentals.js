@@ -1,0 +1,20 @@
+{
+  "name": "fundamentals.js",
+  "version": "1.0.0",
+  "description": "A library that provides fundamental, non-native data structures for JavaScript and TypeScript",
+  "main": "fundamentals.js",
+  "repository": "https://github.com/MRcraigchick/Fundamentals.js.git",
+  "author": "MRcraigchick <craigchick@outlook.com>",
+  "license": "GPLV3",
+  "private": false,
+  "scripts": {
+    "dev": "tsnd --respawn fundamentals.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
+  }
+}
