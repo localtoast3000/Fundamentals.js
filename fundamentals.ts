@@ -1,11 +1,13 @@
 import { inspect, performanceTest } from './dev_lib/util';
-import CombinationsBinaryTree from './util/combinations/combinationTree';
+import DoublyLinkedList from './util/linked_list/doublyLinked';
 
-// Tree build time on array of 23 elements = 4.1079844999313355 seconds
-
-const largeArray = Array(30)
+const largeArray = Array(1100)
   .fill('')
   .map((x, i) => i + 1);
 
-const combinationTree = new CombinationsBinaryTree(largeArray);
-// inspect(combinationTree._combinations, 1);
+const list = new DoublyLinkedList(largeArray);
+
+// inspect(singlyLinkedList, 30);
+list.forEach((val: any, i: number) => {
+  console.log({ [i]: val });
+});

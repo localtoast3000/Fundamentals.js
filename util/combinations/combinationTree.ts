@@ -1,5 +1,5 @@
-import Node from '../../data_structures/trees/binaryTree/node';
-import { BTNodeType } from '../../data_structures/trees/binaryTree/types';
+import Node from '../../blueprints/trees/binaryTree/node';
+import { BTNodeType } from '../../blueprints/trees/binaryTree/types';
 import { performanceTest } from '../../dev_lib/util';
 
 export default class CombinationsBinaryTree {
