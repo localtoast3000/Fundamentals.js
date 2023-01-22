@@ -1,12 +1,9 @@
 import { inspect, performanceTest } from './dev_lib/util';
-import DoublyLinkedList from './util/linked_list/doublyLinked';
+import LinkedQueue from './util/queue/linkedQueue';
 
-const largeArray = Array(1000)
+const largeArray = Array(2)
   .fill('')
   .map((x, i) => i + 1);
 
-const list = new DoublyLinkedList(largeArray);
-
-list.forEachFromTail((val: any, i: number) => {
-  console.log({ [i]: val });
-});
+const list = new LinkedQueue(largeArray);
+inspect(list, 2);

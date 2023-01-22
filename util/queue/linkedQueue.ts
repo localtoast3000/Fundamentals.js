@@ -1,7 +1,8 @@
-import SinglyLinkedList from '../linked_list/singlyLinked';
+import DoublyLinkedList from '../linked_list/doublyLinked';
 
-export default class LinkedQueue extends SinglyLinkedList {
-  constructor() {
-    super();
+export default class LinkedQueue extends DoublyLinkedList {
+  constructor(values: any[]) {
+    super(values);
   }
+  pop() {}
 }
